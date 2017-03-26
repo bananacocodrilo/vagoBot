@@ -11,3 +11,19 @@ bot.onText(/\/toggle()/, function(msg, match) {
     bot.sendMessage(chatId, response);
 
 });
+
+bot.onText(/\/sunrise()/, function(msg, match) {
+    let chatId = msg.chat.id;
+    let response = logic.toggle(msg);
+
+    bot.sendMessage(chatId, response);
+
+});
+
+bot.onText(/\/setDefault()/, function(msg, match) {
+    let chatId = msg.chat.id;
+    let response = logic.setDefault(msg);
+
+    bot.sendMessage(chatId, response);
+
+});

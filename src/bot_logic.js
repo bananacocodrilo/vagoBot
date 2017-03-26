@@ -1,6 +1,4 @@
 const Yeelight = require('yeelight2');
-
-let bot = new TelegramBot(token, { polling: true });
 let lights = {};
 
 Yeelight.discover(function(light) {
